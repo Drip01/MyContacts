@@ -6,4 +6,22 @@
 	<phone_number>09060063229</phone_number>
 	<notes>My Details</notes>
 </contact>
+<contact>
+	<first_name>bob</first_name>
+	<last_name>smith</last_name>
+	<phone_number>5677</phone_number>
+	<notes>notes</notes>
+</contact>
+<contact>
+	<first_name>HomeBoy</first_name>
+	<last_name>Daniel</last_name>
+	<phone_number>1234</phone_number>
+	<notes>some notes</notes>
+</contact>
+<contact>
+	<first_name>Mbappe</first_name>
+	<last_name>Jeffery</last_name>
+	<phone_number>4567</phone_number>
+	<notes>More Notes</notes>
+</contact>
 </contacts>
