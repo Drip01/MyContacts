@@ -94,4 +94,28 @@ public class Controller {
             data.saveContacts();
         }
     }
+
+    public void deleteContact() {
+       Contact selectedContact = contactsTable.getSelectionModel().getSelectedItem();
+       if(selectedContact == null) {
+           Alert alert = new Alert(Alert.AlertType.INFORMATION);
+           alert.setTitle("No Contact Selected");
+           alert.setHeaderText(null);
+           alert.setContentText("Please select the contact you want to delete");
+           alert.showAndWait();
+           return;
+       }
+
+       Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+       alert.setTitle("Delete Contact");
+       alert.setHeaderText(null);
+       alert.setContentText("Are you sure you want to delete the seleted contact: " +
+               selectedContact.getFirstName() + " " + selectedContact.getLastName());
+
+       Optional<ButtonType> result = alert.showAndWait();
+       if (result.isPresent() && result.get() == ButtonType.OK) {
+           data.deleteContact(selectedContact);
+           data.saveContacts();
+       }
+    }
 }
