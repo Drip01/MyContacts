@@ -1,4 +1,4 @@
-package com.example.mycontacts.datamodel;
+package com.example.myContacts.datamodel;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
